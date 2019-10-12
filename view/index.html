@@ -1,0 +1,79 @@
+<html lang='en'>
+<head>
+<title>Capybara Detector</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8" />
+<link rel='stylesheet' href='../static/style.css'>
+<script src='../static/client.js'></script>
+<meta name="description" content="The world's first AI-driven capybara image recognition engine"/>
+<meta property="og:image" content="https://animalcafes.com/pix/800-nasu-anikin.jpg" />
+<meta property="og:title" content="Capybara Detector" />
+<meta property="og:url" content="https://capybara.animalcafes.com" />
+<meta property="og:description" content="The world's first AI-driven capybara image recognition engine" />
+<meta property="og:site_name" content="Capybara Detector" />
+</head>
+<body onload="onLoadProc();">
+<div class="all">
+	<div class='topintro'>
+		<div class='title'>Capybara Detector</div>
+		<div id="header12">
+			<div id="head1">
+				<div class="headerimg" id="headerimg"><img src="../static/caphead.jpg" alt="capy" /></div>
+			</div>
+			<div class="introtext" id="introtext"><p>
+				Take a photo at the zoo or upload an image and find out if it's a capybara.  (Instagram screenshots will work too.)</p><p class="hide-for-small">Currently, the Capybara Detector can differentiate among capybaras, rabbits, squirrels, guinea pigs, beavers, degus, chinchillas, nutrias and agoutis.</p>
+			</div>
+		</div>
+	</div>
+	<div class='content' id="maincontentblock">
+		<div id="photozone" class='no-display'>
+	        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+		</div>
+		<div id="mainzone">
+			<div id="button1">
+				<button class='bigbutton choose-file-button' type='button' onclick='showPicker()'>1. Upload image</button>
+			</div>
+			<div id="thefilelabel" class='upload-label'>
+				<label id='upload-label'>No file chosen</label>
+			</div>
+			<div id="imagepickedarea">
+				<img id='image-picked' class='no-display' alt='file uploaded' >
+			</div>
+			<div id="theresult" class='result-label'>
+				<div id="spinner1" class='no-display'>
+					<div>.  .  .  .  .  .</div>
+				</div>
+				<label id='result-label'></label>
+			</div>
+			<div class='analyze' id="button2">
+				<button id='analyze-button' class='bigbutton analyze-button' type='button' onclick='analyze()'>2. Analyze image</button>
+			</div>
+        </div><!-- mainzone -->
+		<div class="bottomzone">
+			<p class="show-for-small">Currently, the Capybara Detector can differentiate among capybaras, rabbits, squirrels, guinea pigs, beavers, degus, chinchillas, nutrias and agoutis.</p>
+	        <form action="/sample-img" method="get">
+	            <input class="bigbutton" id="samplesubmit" type="submit" value="Try sample images">
+	        </form>
+			<div id="sharezone">
+				<div class="bottomheader">Share:</div>
+				<ul class="shareicons inline-list">
+					<li class="onesharelist"><a target="_blank" class="onesharelink" href="http://line.naver.jp/R/msg/text/?Capybara%20Detector%0Ahttps%3A%2F%2Fcapybara.animalcafes.com"><img title="Share on LINE" src="../static/80-line.gif" alt="LINE" /></a></li>
+					<li class="onesharelist"><a target="_blank" class="onesharelink" href="https://twitter.com/intent/tweet?text=Capybara%20Detector&amp;url=https%3A%2F%2Fcapybara.animalcafes..com"><img title="Tweet" src="../static/80-twitter.gif" alt="twitter" /></a></li>
+					<li class="onesharelist"><a target="_blank" class="onesharelink" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fcapybara.animalcafes.com"><img title="Share on Facebook" src="../static/80-facebook.gif" alt="facebook" /></a></li>
+				</ul>
+			</div><!-- sharezone -->
+			<div class="bottomlinkrow">
+				<hr class="bottomhr1" />
+				<a class="textlink" href="/about">About</a>
+				<a class="textlink" href="https://animalcafes.com/privacy.html">Privacy</a>
+			</div>
+	    </div>
+	</div>
+</div>
+</body>
+</html>

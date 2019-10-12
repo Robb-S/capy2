@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Capybara Detector - sample images</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset='utf-8'>
+<link rel='stylesheet' href='../static/style.css'>
+</head>
+<body>
+<div class="all allsample">
+	<div class="title titlesample">Sample images
+	<!--<span class="medium">med</span>-->
+	</div>
+	<div id="samplecontent">
+		<div id="sampleimagediv">
+			<img src="{{img_file}}" class="sampleimage">
+		</div>
+		<div id="theresult2" class='result-label result-label-sample'>
+			<label id='result-label'><div class="result resultsample">{{ themsg }}</div></label>
+		</div>
+	</div>
+	<div class="bottombuttons" id="samplebottombuttons">
+		<form id="sform1" action="/sample-img" method="get">
+			<input class="bigbutton" id="sampleagain" type="submit" value="Try another sample">
+		</form>
+		<form id="sform2" action="/" method="get">
+			<input class="bigbutton" id="backtomain" type="submit" value="Back to main page">
+		</form>
+	</div>
+	<div class="bottomlinkrow bottomlinkrowsample ">
+		<hr class="bottomhr1" />
+		<a class="textlink" href="/about">About</a>
+		<a class="textlink" href="https://animalcafes.com/privacy.html">Privacy</a>
+	</div>
+</div>
+</body>
+</html>
