@@ -5,3 +5,5 @@ The Capybara Detector is a deployment of an AI-driven image-classification model
 The deployment uses Flask plus a bit of Javascript to load user-supplied images and sample images, then access the model for predictions.  It's deployed at DreamHost, running under Passenger.   
 
 Details of the model training process can be found at https://github.com/Robb-S/capybara-train 
+
+And here's the deployment if you need to use it yourself: https://capybara.animalcafes.com/
